@@ -60,16 +60,3 @@
 .page2-center {
     align-items: end;
 }
-
-
-@keyframes updown {
-    from {
-        top: 40%;
-    }
-
-    to {
-        top: 45%;
-    }
-}
-
-/* page 3 css */
