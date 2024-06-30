@@ -32,15 +32,27 @@ tp.from('#nav_top li , #nav_top img , #nav_top i', {
   y: -200,
   opacity: 0,
   duration: 1,
-  ease: 'back.out'
+  ease: 'back.out',
+  scrub : true,
 })
+
+tp.from('#drop1', {
+      left : "-50%",
+      duration: 1,
+      ease : 'back.out'
+} ,'e')
+tp.from('#drop2', {
+      right : "-50%",
+      duration: 1,
+      ease : 'back.out'
+},'e')
 
 tp.from('#ice', {
   scale: 0,
-  rotate: 180 ,
+  rotate: 360 ,
   opacity: 0,
   duration: .5,
-  ease: 'back.out'
+  ease: 'power4.out'
 }, 'i')
 
 tp.from('#bg-logo', {
@@ -53,8 +65,9 @@ tp.from('#bg-logo', {
 
 gsap.to("#bottle", {
   rotate: 0,
+  opacity: 0,
   scrollTrigger: {
-    trigger: "#bottle",
+    trigger: ("#bottle"),
     scroller: "#main",
     start: "top 8%",
     end: "top -150%",
@@ -64,19 +77,34 @@ gsap.to("#bottle", {
   }
 })
 
-gsap.to("#bottle", {
-  opacity: 0,
+let p1 = gsap.timeline({
   scrollTrigger: {
-    trigger: "#page5 h1",
+    trigger: "#page1",
     scroller: "#main",
-    start: "top -50%",
-    end: "top -500%",
+    start: "center center",
+    end: "bottom top",
     scrub: true,
-    pin: true,
   }
 })
 
-
+p1.to('#drop1',{
+  left : "110%",
+  duration: 1,
+  rotate : 20,
+  opacity : 0,
+  ease: 'power4.out'
+},'g').to('#drop2',{
+  right : "110%",
+  duration: 1,
+  opacity:0,
+  rotate : -20,
+  ease: 'power4.out'
+},'g')
+.to('#bg-logo',{
+  top : '-50%' ,
+  duration : 1,
+  ease : 'power4.out'
+},'g')
 
 let tp2 = gsap.timeline({
   scrollTrigger: {
@@ -87,6 +115,8 @@ let tp2 = gsap.timeline({
     scrub: true,
   }
 })
+
+
 
 tp2.from(".box p , .box .red , .box button", {
   y: 600,
@@ -162,9 +192,9 @@ var p5 = gsap.timeline({
   scrollTrigger: {
     trigger: "#page5",
     scroller: "#main",
-    start: "top center",
-    end: "top top",
-    scrub:true
+    start: "top 80%",
+    end: "top 30%",
+    scrub:true,
   },
 })
 

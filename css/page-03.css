@@ -1,0 +1,103 @@
+#page3 {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: relative;
+    padding: 0 2vw;
+}
+
+
+#page3 .left {
+    width: 40%;
+    height: 100%;
+    backdrop-filter: blur(30px);
+    border-radius: 50px 0 0 50px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.left img {
+    width: 85%;
+    object-fit: cover;
+    position: absolute;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+#page3-can {
+    width: 50%;
+    right: 0;
+}
+
+#iceCubeBottom {
+    width: 100%;
+    position: absolute;
+
+}
+
+#page3 .right {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    overflow: hidden;
+}
+
+.zero {
+    position: absolute;
+    top: 50%;
+    left: -1.2%;
+    transform: translate(0, -50%);
+
+}
+
+.right .zero p {
+    font-size: 12vw;
+    line-height: 80%;
+    font-weight: 600;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* rotate:180deg */
+}
+
+#page3 .part2 {
+    width: 40%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+
+#page3 .part2 h1 {
+    font-size: 6vw;
+    font-family: ivymoder;
+    /* color: red; */
+}
+
+#page3 .part2 p {
+    font-size: 1.2vw;
+}
+
+#page3 .part2 button {
+    border: 1px solid red;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: red;
+}
+
+.info {
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

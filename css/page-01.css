@@ -1,0 +1,70 @@
+#page1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#page1 img {
+    width: 80%;
+    position: absolute;
+
+}
+
+#page1 .overlay #ice {
+    top: 4%;
+    left: 50%;
+    width: 43%;
+    transform: translate(-50%, 0);
+}
+
+#page1 #bg-logo {
+    top: 20%;
+    width: 80%;
+}
+
+
+#page1 #drop1 {
+    left: 26%;
+    top:   40%;
+    width: 13vw;
+    rotate: -23deg;
+}
+
+#page1 #drop2 {
+    right: 24%;
+    top: 40%;
+    width: 14vw;
+    rotate: 25deg;
+}
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.socialMedia {
+    position: absolute;
+    right: 5%;
+    bottom: 7%;
+    display: flex;
+}
+
+.socialMedia span {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: 5px 0;
+    font-size: 1.5vw;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
